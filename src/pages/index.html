@@ -1,81 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dariusz Słomka - portfolio</title>
-    <meta name="description" content="Dariusz Słomka's skills & projects" />
-    <meta property="og:title" content="Dariusz Słomka - portfolio" />
-    <meta property="og:description" content="Dariusz Słomka's skills & projects" />
-    <meta property="og:url" content="https://dariusz.slomka.github.io" />
-    <meta
-      property="og:image"
-      content="https://maciejkorsan.com/wtf-gulp-starter/assets/img/cover.png"
-    />
 
-  </head>
-  <body>
-    <main class="main">
-      <section class="hero">
-        <img href="./assets/img/foto.jpg" class="foto" />
-        <p>Hey there!👋</p>
-        <h1 class="hero__header">My name is Darek and I'm <span class="special">fullstack developer</span></h1>
-        <p class="hero__description">You might be interested in checking the list of <a class="hero__link" href="#skills">my skills</a>. 
-          Don't forget to have a glimnpse at <a class="hero__link" href="#projects">my projects</a>. 
-          Currently I'm looking for a new challenges so if you have one - <a class="mail" href="#contact">contact me 😊</a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dariusz Słomka - portfolio</title>
+  <meta name="description" content="Dariusz Słomka's skills & projects" />
+  <meta property="og:title" content="Dariusz Słomka - portfolio" />
+  <meta property="og:description" content="Dariusz Słomka's skills & projects" />
+  <meta property="og:url" content="https://dariusz.slomka.github.io" />
+  <meta property="og:image" content="https://maciejkorsan.com/wtf-gulp-starter/assets/img/cover.png" />
+
+</head>
+
+<body>
+  <main class="main">
+    <section class="hero">
+      <div class="hero__image-container">
+        <img src="./../assets/img/foto.jpg" alt="Darek's photo" class="hero__image" />
+        <span class="hero__hello">Hey there!👋</span>
+      </div>
+      <div class="hero__about">
+        <h1 class="hero__header">My name is Darek and I'm <span class="hero__special">fullstack developer</span></h1>
+        <p class="hero__paragraph">You might be interested in checking the list of <a class="hero__link"
+            href="#skills">my skills</a>.
+          Don't forget to have a glimnpse at <a class="hero__link" href="#projects">my projects</a>.
+          Currently I'm looking for a new challenges so if you have one - <a class="mail" href="#contact">contact me
+            😊</a>
         </p>
-        <a href="mailto:dariusz.slomka88@gmail.com">dariusz.slomka88@gmail.com</a>
-      </section>
-      <section class="skills">
-        <h2 clas="skills__header">My skills</h2>
-        <article class="knowledge">
-          <h3 class="knowledge__header">Working knowledge</h3>
-          <ul class="list">
-            <li class="list__item">C#</li>
-            <li class="list__item">.Net</li>
-            <li class="list__item">.Net Core</li>
-            <li class="list__item">MVC</li>
-            <li class="list__item">WPF</li>
-            <li class="list__item">WCF</li>
-            <li class="list__item">WinForms</li>
-            <li class="list__item">Entity Framework</li>
-            <li class="list__item">MSSql</li>
-            <li class="list__item">SqLite</li>
-            <li class="list__item">Html</li>
-            <li class="list__item">CSS</li>
-            <li class="list__item">Git</li>
-            <li class="list__item">SVN</li>
-            <li class="list__item">Gitlab</li>
+      </div>
+      <a class="hero__mail" href="mailto:dariusz.slomka88@gmail.com">dariusz.slomka88@gmail.com</a>
+    </section>
+    <section class="skills" id="skills">
+      <h2 clas="skills__header">My skills</h2>
+      <article class="skills-section">
+        <span class="skills-section__emoji">💪</span>
+        <h3 class="skills-section__header">Working knowledge</h3>
+        <ul class="skills-list">
+          <li class="skills-list__item">C#</li>
+          <li class="skills-list__item">.Net</li>
+          <li class="skills-list__item">.Net Core</li>
+          <li class="skills-list__item">MVC</li>
+          <li class="skills-list__item">WPF</li>
+          <li class="skills-list__item">WCF</li>
+          <li class="skills-list__item">WinForms</li>
+          <li class="skills-list__item">Entity Framework</li>
+          <li class="skills-list__item">MSSql</li>
+          <li class="skills-list__item">SqLite</li>
+          <li class="skills-list__item">Html</li>
+          <li class="skills-list__item">CSS</li>
+          <li class="skills-list__item">Git</li>
+          <li class="skills-list__item">SVN</li>
+          <li class="skills-list__item">Gitlab</li>
+        </ul>
+      </article>
+      <article class="skills-section">
+        <span class="skills-section__emoji">🤔</span>
+        <h3 class="skills-section__header">Know smoething about</h3>
+        <ul class="skills-list">
+          <li class="skills-list__item">JaveScript</li>
+          <li class="skills-list__item">RabbitMq</li>
+        </ul>
+      </article>
+      <article class="skills-section">
+        <span class="skills-section__emoji">🎓</span>
+        <h3 class="skills-section__header">Want to learn</h3>
+        <ul class="skills-list">
+          <li class="skills-list__item">React</li>
+          <li class="skills-list__item">Angular</li>
+        </ul>
+      </article>
+    </section>
+    <section class="projects" id="projects">
+      <h2 class="projects__header">Recent projects</h2>
+      <p class="projects__description">Here's the list of the things I've done so far.</p>
+      <div class="projects-grid">
+        <article class="project">
+          <img src="./../assets/img/github.png" alt="github-logo" class="project__github-logo">
+          <h3 class="project__title">
+            <span class="project__label">project:</span> 
+            <span>Portfolio</span>
+          </h3>
+          <p class="project__description">
+            <span class="project__label">description: </span> 
+            <span>Description of project</span>
+          </p>
+          <p class="project__demo">
+            <span class="project__label">demo: </span> 
+            <a href="https://dariuszslomka.github.io" class="project__preview">see here</a>
+          </p>
+          <p class="project__url">
+            <span class="project__label">github: </span> 
+            <a href="https://dariusz.slomka.github.com/dariuszslomka.github.io" class="project__url">source code</a>
+          </p>
+        </article>
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <h2 class="contact__header">Contact me</h2>
+      <p class="contact__description">I'm open for new opportunities. If you have one for me we should talk</p>
+      <div class="contact__links">
+        <ul class="socials">
+          <li class="socials__item">
+            <a href="https://github.com/dariuszslomka" class="socials__link">
+              <img alt="Darek's github page" class="socials__icon">
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="#" class="socials__link">
+              <img alt="Darek's instagram page" class="socials__icon">
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="#" class="socials__link">
+              <img alt="Darek's facebook page" class="socials__icon">
+            </a>
+          </li>
+        </ul>
+        <a class="contact__mail" href="mailto:dariusz.slomka88@gmail.com">dariusz.slomka88@gmail.com</a>
+      </div>
+    </section>
+  </main>
+</body>
 
-          </ul>
-        </article>
-        <article class="learning">
-          <h3 class="learning__header">Know smoething about</h3>
-          <ul class="list">
-            <li class="list__item">JaveScript</li>
-            <li class="list__item">RabbitMq</li>
-          </ul>
-        </article>
-        <article class="want-to-learn">
-          <h3 class="want-to-learn__header">Want to learn</h3>
-          <ul class="list">
-            <li class="list__item">React</li>
-            <li class="list__item">Angular</li>
-          </ul>
-        </article>
-      </section>
-      <section class="projects">
-        <h2 class="projects__header">Recent projects</h2>
-        <p class="projects__info">Here's the list of the things I've done so far.</p>
-      </section>
-      <section class="contact">
-        <h2 class="footer__header">Contact me</h2>
-        <p class="contact__description">I'm open for new opportunities. If you have one for me we should talk</p>
-        <a href="https://github.com/dariuszslomka" class="github"></a>
-        <a href="#" class="instagram"></a>
-        <a href="#" class="facebook"></a>
-        <a href="mailto:dariusz.slomka88@gmail.com">dariusz.slomka88@gmail.com</a>
-      </section>
-    </main>
-  </body>
 </html>
