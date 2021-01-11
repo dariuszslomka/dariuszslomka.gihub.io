@@ -1,0 +1,54 @@
+
+@import "_variables";
+
+.hero {
+    background: $white;
+    margin: 64px 16px 88px 16px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__image-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__image {
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        border: 16px solid $blue-lightest;
+    }
+
+    &__hello {
+        display: none;
+    }
+
+    &__header {
+        color: $text-dark;
+        margin-bottom: 16px;
+        font-size: 26px;
+    }
+
+    &__special {
+        color: $blue;
+    }
+
+    &__description {
+        color: $text-default;
+        font-size: 16px;
+    }
+
+    &__link {
+        color: $link;
+    }
+
+    &__mail {
+        color: $white;
+        background: $link;
+        border-radius: 64px;
+        padding: 4px 24px;
+        margin: 0px 40px;
+    }
+}

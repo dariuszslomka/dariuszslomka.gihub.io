@@ -1,13 +1,14 @@
 @import "~normalize.css";
 
 @import "_variables";
-@import "modules/hello.scss";
+@import "modules/hero.scss";
 
-body {
-  background: $wtf;
-  color: #fff;
+main {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+  font-family: 'Nunito', sans-serif;
+  line-height: 32px;
 }
