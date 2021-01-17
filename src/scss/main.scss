@@ -3,7 +3,16 @@
 @import "_variables";
 @import "modules/hero.scss";
 
-main {
-  min-height: 100vh;
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;600;700&family=Roboto+Mono:wght@400;700&display=swap');
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
   font-family: 'Nunito', sans-serif;
 }

@@ -1,25 +1,48 @@
-
 @import "_variables";
 
+@keyframes shake {
+    0% {
+      transform: rotate(-10deg);
+    }
+    15% {
+      transform: rotate(10deg);
+    }
+    30% {
+      transform: rotate(-5deg);
+    }
+    45% {
+      transform: rotate(5deg);
+    }
+    60% {
+      transform: rotate(0deg);
+    }
+  }
+
 .hero {
-    background: $white;
-    margin: 64px 16px 88px 16px;
+    padding: 82px 16px 88px;
     text-align: center;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    line-height: 32px;
+    flex-direction: column;
 
     &__image-container {
         position: relative;
-        width: 100%
+        width: 100%;
+        margin-bottom: 24px;
     }
 
     &__image {
-        width: 90px;
-        height: 90px;
+        width: 96px;
+        height: 96px;
+        box-sizing: content-box;
         border-radius: 50%;
         border: 16px solid $blue-lightest;
+
+        @media screen and (min-width: $desktop-width) {
+            width: 178px;
+            height: 178px;
+        }
     }
 
     &__hello {
@@ -39,10 +62,16 @@
         }
     }
 
+    &__hello-icon {
+        animation: shake linear 1s infinite;
+        display: inline-block;
+    }
+
     &__about{
+        margin-bottom: 48px;
 
         @media screen and (min-width: $desktop-width) {
-            margin: 0 229px;
+            margin: 0 229px 48px;
             position: relative;
             max-width: 720px;
         } 
@@ -69,20 +98,30 @@
         color: $text-dark;
         margin-bottom: 16px;
         font-size: 26px;
+        font-weight: bold;
+        line-height: 32px;
     }
 
     &__special {
         color: $blue;
+        font-weight: bold;
+        font-size: 26px;
+        line-height: 32px;
     }
 
     &__description {
         color: $text-default;
+        font-weight: 300;
         font-size: 16px;
+        line-height: 32px;
     }
 
     &__link {
         color: $link;
         text-decoration: none;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 32px;
     }
 
     &__mail {
@@ -92,5 +131,9 @@
         padding: 4px 24px;
         margin: 0px 40px;
         text-decoration: none;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 40px;
+        display: inline-block;
     }
 }
