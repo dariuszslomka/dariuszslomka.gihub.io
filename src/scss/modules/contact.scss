@@ -1,0 +1,60 @@
+.contact {
+    background: $blue-light;
+    padding: 64px 0 88px;
+
+    &__header {
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 48px;
+        color: $text-dark;
+        text-align: center;
+        margin-bottom: 32px;
+    }
+
+    &__description {
+        font-weight: 300;
+        padding: 0 16px 0;
+        font-size: 16px;
+        line-height: 32px;
+        color: $text-default;
+        text-align: center;
+        margin-bottom: 56px;
+    }
+
+    &__mail {
+        color: $white;
+        background: $link;
+        border-radius: 64px;
+        padding: 4px 24px;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 40px;
+        display: inline-block;
+    }
+
+    &__links {
+        text-align: center;
+    }
+
+    .socials {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 64px;
+        list-style: none;
+
+        &__link {
+            background: $white;
+            height: 48px;
+            width: 48px;
+            margin: 12px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        }
+    }
+}
+
