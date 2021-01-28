@@ -23,6 +23,7 @@
         @media (min-width: $desktop-width) {
             display: grid;
             margin: 0 auto;
+            max-width: 1184px;
             grid-template-columns: 1fr 1fr 1fr;
             column-gap: 24px;
         }

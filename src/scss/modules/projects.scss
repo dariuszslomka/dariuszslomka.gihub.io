@@ -1,6 +1,20 @@
 .projects {
     padding: 64px 16px 88px;
 
+    &__description {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 32px;
+        margin-bottom: 46px;
+        text-align: center;
+
+        @media (min-width: $desktop-width) {
+            font-size: 20px;
+            line-height: 40px;
+            margin-bottom: 128px;
+        } 
+    }
+
     &__header {
         font-weight: bold;
         font-size: 36px;
@@ -8,14 +22,11 @@
         margin-bottom: 32px;
         text-align: center;
         color: $text-dark;
-    }
 
-    &__description {
-        font-weight: 300;
-        font-size: 16px;
-        line-height: 32px;
-        margin-bottom: 46px;
-        text-align: center;
+        @media (min-width: $desktop-width) {
+            font-size: 48px;
+            line-height: 56px;
+        } 
     }
 }
 
@@ -26,6 +37,13 @@
     font-family: 'Roboto Mono', monospace;
     filter:  drop-shadow(0px 4px 16px rgba(0, 0, 0, 0.25));
     overflow: hidden;
+    font-size: 13px;
+    line-height: 24px;
+    
+    @media (min-width: $desktop-width) {
+        font-size: 16px;
+        line-height: 24px;
+    } 
 
     &__window {
         height: 40px;
@@ -46,6 +64,9 @@
 
     &__content {
         padding: 24px 16px 48px;
+        @media (min-width: $desktop-width) {
+            padding: 24px 48 82px;
+        } 
     }
 
     &__github-logo {
@@ -58,6 +79,10 @@
         column-gap: 8px;
         margin-bottom: 8px;
 
+        @media (min-width: $desktop-width) {
+            grid-template-columns: 116px 1fr;
+        } 
+
         &--biggest-margin {
             margin-bottom: 24px;
         }
@@ -65,32 +90,34 @@
 
     &__label {
         font-weight: normal;
-        font-size: 13px;
-        line-height: 24px;
         color: $grey4;
         text-align: right;
     }
 
     &__name {
         font-weight: bold;
-        font-size: 13px;
-        line-height: 24px;
         color: $white;
     }
 
     &__about {
         font-weight: normal;
-        font-size: 13px;
-        line-height: 24px;
         color: $grey5;
     }
 
     &__url {
         font-weight: normal;
-        font-size: 13px;
-        line-height: 24px;
         color: $text-link;
     
+    }
+
+    &__title {
+        font-size: 13px;
+        line-height: 24px;
+
+        @media (min-width: $desktop-width) {
+            font-size: 16px;
+            line-height: 24px;
+        } 
     }
 }
 
@@ -101,4 +128,9 @@
     @media (min-width: $tablet-width) {
         grid-template-columns: 1fr 1fr;
     }
+
+    @media (min-width: $desktop-width) {
+        max-width: 1184px;
+        margin: 0 auto;
+    } 
 }
