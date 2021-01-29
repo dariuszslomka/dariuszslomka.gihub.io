@@ -4,10 +4,10 @@ fetch("https://api.github.com/users/dariuszslomka/repos?per_page=50")
 .then(response => response.json())
 .then(response => {
 	console.log(response);
-	let repoList = document.querySelector('.projects-grid');
+	let repoList = document.querySelector('.projects-grid--js');
 	for(let repo of response)
 	{
-		const {name, html_url, description} = repo;
+		const {name, html_url, homepage, description} = repo;
         let template = `<article class="project">
         <div class="project__window">
           <span class="project__circle"></span>
@@ -26,11 +26,18 @@ fetch("https://api.github.com/users/dariuszslomka/repos?per_page=50")
           </p>
           <p class="project__demo project__grid">
             <span class="project__label">demo: </span> 
-            <a href="${html_url}" class="project__url">see here</a>
+            <a href="${homepage}" 
+            target="_blank"  
+            rel="noopener noreferrer"
+            class="project__url">see here</a>
           </p>
           <p class="project__adress project__grid">
             <span class="project__label">github: </span> 
-            <a href="${html_url}" class="project__url">source code</a>
+            <a href="${html_url}" 
+            target="_blank" 
+            title="${name}" 
+            rel="noopener noreferrer"
+            class="project__url">source code</a>
           </p>
         </div>
       </article>`;
