@@ -1,4 +1,4 @@
-![cover](https://dariuszslomka.github.io/og-image.png)
+![cover](https://dariuszslomka.github.io/img/og-image.png)
 
 # Dariusz Słomka - Fullstack Developer
 
