@@ -78,10 +78,10 @@
             height: 9px;
             left: 0px;
             top: 7.5px;           
-            background: url("/src/assets/img/small-tick.svg");     
+            background: url("../assets/img/small-tick.svg");     
 
             .skills-list--blue & {
-                background: url("/src/assets/img/small-tick-blue.svg");
+                background: url("../assets/img/small-tick-blue.svg");
             }
 
             .skills-list--dot & {

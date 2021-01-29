@@ -76,7 +76,7 @@
 
         &:after {
             content: "";
-            background: url("/src/assets/img/speech.svg");
+            background: url("../assets/img/speech.svg");
             width: 17.42px;
             height: 22.66px;
             display: block;
@@ -112,14 +112,14 @@
         }
         &::before {
             @media screen and (min-width: $desktop-width) {
-                background: url("/src/assets/img/open-bracket.svg");
+                background: url("../assets/img/open-bracket.svg");
                 right: 100%;
             } 
         }
 
         &::after {
             @media (min-width: $desktop-width) {
-                background: url("/src/assets/img/close-bracket.svg");
+                background: url("../assets/img/close-bracket.svg");
                 left: 100%;
             } 
         }
